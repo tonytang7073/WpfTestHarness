@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="WpfTestHarness.UserControls.UserMaintenanceControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfTestHarness.UserControls"
+             mc:Ignorable="d" 
+             Loaded="UserControl_Loaded"
+             d:DesignHeight="450" d:DesignWidth="800">
+
+   
+
+    <Border Style="{StaticResource screenBorder}">
+        <Grid DataContext="{Binding Source={StaticResource vmLocator}, Path=UserMaintenanceViewModel}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <ToolBar Grid.Row="0">
+                <Button Style="{StaticResource toolbarButton}" IsEnabled="{Binding Path=IsListEnabled}" ToolTip="Add New User">
+                    <Image Source="/Images/Plus_Black.png" Style="{StaticResource toolbarImage}" />
+                </Button>
+                <Separator />
+                <Button Style="{StaticResource toolbarButton}" IsEnabled="{Binding Path=IsListEnabled}" ToolTip="Edit Current User">
+                    <Image Source="/Images/Edit_Black.png" Style="{StaticResource toolbarImage}" />
+                </Button>
+                <Button Style="{StaticResource toolbarButton}" IsEnabled="{Binding Path=IsListEnabled}" ToolTip="Delete Current User">
+                    <Image Source="/Images/Trash_Black.png" Style="{StaticResource toolbarImage}" />
+                </Button>
+                <Separator />
+                <Button Style="{StaticResource toolbarButton}" IsEnabled="{Binding Path=IsDetailEnabled}" ToolTip="Undo Changes">
+                    <Image Source="/Images/Undo_Black.png" Style="{StaticResource toolbarImage}" />
+                </Button>
+                <Button Style="{StaticResource toolbarButton}" IsEnabled="{Binding Path=IsDetailEnabled}" ToolTip="Save Changes">
+                    <Image Source="/Images/Save_Black.png" Style="{StaticResource toolbarImage}" />
+                </Button>
+            </ToolBar>
+            <local:UserMaintenanceListControl Grid.Row="1" x:Name="listControl" DataContext="{Binding Source={StaticResource vmLocator}, Path=UserMaintenanceViewModel}"/>
+            <local:UserMaintenanceDetailTabControl Grid.Row="2" />
+        </Grid>
+       
+    </Border>
+</UserControl>
