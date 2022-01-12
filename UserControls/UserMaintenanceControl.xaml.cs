@@ -20,7 +20,7 @@ namespace WpfTestHarness.UserControls
             InitializeComponent();
             // Connect to instance of the view model created by the XAML
 
-            _viewModel = new UserMaintenanceViewModel(new model.MOCDAL());
+            _viewModel = this.DataContext as UserMaintenanceViewModel;
 
 
         }

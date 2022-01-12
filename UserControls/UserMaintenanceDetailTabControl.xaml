@@ -9,13 +9,13 @@
     <Grid>
         <TabControl>
             <TabItem Header="User Details">
-                <local:UserMaintenanceDetailControl x:Name="detailControl" IsEnabled="{Binding Path=IsDetailEnabled}" DataContext="{Binding Source={StaticResource vmLocator}, Path=UserMaintenanceViewModel}"  />
+                <local:UserMaintenanceDetailControl x:Name="detailControl" IsEnabled="{Binding Path=IsDetailEnabled}"   />
             </TabItem>
             <TabItem Header="User Groups">
-                <local:UserMaintenanceDetailGroups x:Name="detailUserGroup" IsEnabled="{Binding Path=IsDetailEnabled}" DataContext="{Binding Source={StaticResource vmLocator}, Path=UserMaintenanceViewModel}" />
+                <local:UserMaintenanceDetailGroups x:Name="detailUserGroup" IsEnabled="{Binding Path=IsDetailEnabled}"  />
             </TabItem>
             <TabItem Header="User Security Roles">
-                <local:UserMaintenanceDetailSecurity x:Name="detailUserRole" IsEnabled="{Binding Path=IsDetailEnabled}" DataContext="{Binding Source={StaticResource vmLocator}, Path=UserMaintenanceViewModel}" />
+                <local:UserMaintenanceDetailSecurity x:Name="detailUserRole" IsEnabled="{Binding Path=IsDetailEnabled}"  />
             </TabItem>
         </TabControl>
     </Grid>

@@ -13,6 +13,9 @@ namespace WpfTestHarness.viewmodel
 
         private MOCDAL _dbContext = null;
 
+        public UserMaintenanceListViewModel() 
+        {
+        }
 
         public UserMaintenanceListViewModel(MOCDAL DbContext) : base()
         {
@@ -33,8 +36,11 @@ namespace WpfTestHarness.viewmodel
 
         public virtual void LoadUsers()
         {
-            if (_dbContext == null) { return; }
-            Users = new ObservableCollection<AppUser>();
+            //if (_dbContext == null) { return; }
+            //Users = new ObservableCollection<AppUser>();
+
+            //load from the sample json data.
+            Users = new ObservableCollection<AppUser>(SampleDataHelper.GetSampleAppUsers());
         }
 
        

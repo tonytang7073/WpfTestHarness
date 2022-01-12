@@ -4,14 +4,17 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfTestHarness.UserControls"
+             xmlns:vm="clr-namespace:WpfTestHarness.viewmodel"
              mc:Ignorable="d" 
              Loaded="UserControl_Loaded"
              d:DesignHeight="450" d:DesignWidth="800">
 
-   
+    <UserControl.DataContext>
+        <vm:UserMaintenanceViewModel />
+    </UserControl.DataContext>
 
     <Border Style="{StaticResource screenBorder}">
-        <Grid DataContext="{Binding Source={StaticResource vmLocator}, Path=UserMaintenanceViewModel}">
+        <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
@@ -36,7 +39,7 @@
                     <Image Source="/Images/Save_Black.png" Style="{StaticResource toolbarImage}" />
                 </Button>
             </ToolBar>
-            <local:UserMaintenanceListControl Grid.Row="1" x:Name="listControl" DataContext="{Binding Source={StaticResource vmLocator}, Path=UserMaintenanceViewModel}"/>
+            <local:UserMaintenanceListControl Grid.Row="1" x:Name="listControl" />
             <local:UserMaintenanceDetailTabControl Grid.Row="2" />
         </Grid>
        

@@ -9,9 +9,12 @@ namespace WpfTestHarness.viewmodel
     public class UserMaintenanceViewModel : UserMaintenanceDetailViewModel
     {
 
+        public UserMaintenanceViewModel()
+        {
+            DisplayStatusMessage("Manage Users");
+        }
 
 
-       
         public UserMaintenanceViewModel(MOCDAL dbContext) : base(dbContext)
         {
            

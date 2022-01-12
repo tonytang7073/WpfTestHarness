@@ -12,10 +12,11 @@
           <Style TargetType="Label"  x:Key="feedbackLabels">
           <Setter Property="Margin"      Value="0,0" />
         </Style>
+        <vm:UserFeedbackViewModel x:Key="viewModel" />
     </UserControl.Resources>
 
     <ScrollViewer VerticalScrollBarVisibility="Auto">
-        <Grid DataContext="{Binding Source={StaticResource vmLocator}, Path=UserFeedbackViewModel}">
+        <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />

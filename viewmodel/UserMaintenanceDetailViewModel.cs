@@ -9,6 +9,11 @@ namespace WpfTestHarness.viewmodel
     {
         private AppUser _Entity = new AppUser();
 
+        public UserMaintenanceDetailViewModel() 
+        {
+
+        }
+
         public UserMaintenanceDetailViewModel(MOCDAL dbContext) : base(dbContext)
         {
 
