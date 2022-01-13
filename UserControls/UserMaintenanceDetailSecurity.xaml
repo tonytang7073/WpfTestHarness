@@ -9,10 +9,10 @@
     <ListView ItemsSource="{Binding Path=Entity.AppUserRole}">
         <ListView.View>
             <GridView>
-                <GridViewColumn Header="Role ID" Width="Auto" DisplayMemberBinding="{Binding Path=Role.Id}" />
-                <GridViewColumn Header="Role Name" Width="Auto" DisplayMemberBinding="{Binding Path=Role.Name}" />
-                <GridViewColumn Header="Role Description" Width="Auto" DisplayMemberBinding="{Binding Path=Role.Description}" />
-                <GridViewColumn Header="Role IsBuiltIn" Width="Auto" DisplayMemberBinding="{Binding Path=Role.IsBuiltIn}" />
+                <GridViewColumn Header="Role ID" Width="Auto" DisplayMemberBinding="{Binding Path=Id}" />
+                <GridViewColumn Header="Role Name" Width="Auto" DisplayMemberBinding="{Binding Path=Name}" />
+                <GridViewColumn Header="Role Description" Width="Auto" DisplayMemberBinding="{Binding Path=Description}" />
+                <GridViewColumn Header="Role IsBuiltIn" Width="Auto" DisplayMemberBinding="{Binding Path=IsBuiltIn}" />
             </GridView>
         </ListView.View>
     </ListView>

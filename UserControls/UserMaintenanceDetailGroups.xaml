@@ -10,9 +10,9 @@
         <ListView.View>
             <GridView>
 
-                <GridViewColumn Header="Group ID" Width="Auto" DisplayMemberBinding="{Binding Path=Group.Id}" />
-                <GridViewColumn Header="Group Name" Width="Auto" DisplayMemberBinding="{Binding Path=Group.Name}" />
-                <GridViewColumn Header="Group Desc" Width="Auto" DisplayMemberBinding="{Binding Path=Group.Description}" />
+                <GridViewColumn Header="Group ID" Width="Auto" DisplayMemberBinding="{Binding Path=Id}" />
+                <GridViewColumn Header="Group Name" Width="Auto" DisplayMemberBinding="{Binding Path=Name}" />
+                <GridViewColumn Header="Group Desc" Width="Auto" DisplayMemberBinding="{Binding Path=Description}" />
 
                 <GridViewColumn Header="Delete">
                     <GridViewColumn.CellTemplate>

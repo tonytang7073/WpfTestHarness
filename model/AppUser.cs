@@ -36,6 +36,9 @@ namespace WpfTestHarness.model
         public string JobTitle { get; set; }
         public Guid? LocationId { get; set; }
 
+
+        public virtual IList<AppGroup> AppUserGroup { get; set; }
+        public virtual IList<AppRole> AppUserRole { get; set; }
         
     }
 }

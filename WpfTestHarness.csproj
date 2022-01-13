@@ -8,7 +8,97 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\Checkmark_Black.png" />
+    <None Remove="Images\Checkmark_White.png" />
+    <None Remove="Images\Edit_Black.png" />
+    <None Remove="Images\Edit_White.png" />
+    <None Remove="Images\Envelope_Black.png" />
+    <None Remove="Images\Envelope_White.png" />
+    <None Remove="Images\Key_Color.png" />
+    <None Remove="Images\Minus_Black.png" />
+    <None Remove="Images\Minus_White.png" />
+    <None Remove="Images\Plus_Black.png" />
+    <None Remove="Images\Plus_White.png" />
+    <None Remove="Images\Save_Black.png" />
+    <None Remove="Images\Save_White.png" />
+    <None Remove="Images\Search_Black.png" />
+    <None Remove="Images\Search_White.png" />
+    <None Remove="Images\Trash_Black.png" />
+    <None Remove="Images\Trash_White.png" />
+    <None Remove="Images\Undo_Black.png" />
+    <None Remove="Images\Undo_White.png" />
+    <None Remove="Images\X_Black.png" />
+    <None Remove="Images\X_White.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Checkmark_Black.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Checkmark_White.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Edit_Black.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Edit_White.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Envelope_Black.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Envelope_White.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Key_Color.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Minus_Black.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Minus_White.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Plus_Black.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Plus_White.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Save_Black.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Save_White.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Search_Black.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Search_White.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Trash_Black.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Trash_White.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Undo_Black.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Undo_White.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\X_Black.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\X_White.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>
